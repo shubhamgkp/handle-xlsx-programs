@@ -13,7 +13,7 @@ public class XLSX_Write {
 
 	public static void main(String[] args) throws IOException {
 
-		File file = new File("E:/STUDY_STUFF/SQA/SELENIUM_TESTING/Gurgaon_Class/Selenium/testdatawrite.xlsx");
+		File file = new File("./TestData/testdatawrite.xlsx");
 		FileOutputStream fs = new FileOutputStream(file);				
 
 		XSSFWorkbook wk = new XSSFWorkbook();
@@ -24,8 +24,8 @@ public class XLSX_Write {
 			XSSFRow row = sheet.createRow(i);
 			for(int j=0;j<2;j++){
 				
-				XSSFCell cell = row.createCell(j);
-				cell.setCellValue("Shubham");
+				XSSFCell cell1 = row.createCell(j);
+				cell1.setCellValue("Shubham");
 			}			
 		}
 		
